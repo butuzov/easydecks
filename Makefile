@@ -29,6 +29,7 @@ venv:
 install: venv ## Dev Installs Reqired Packages
 	python3 -m pip install setuptools twine -q
 	python3 -m pip install yapf pylint pytest -q
+	python3 -m pip install yapf pylint pytest -q
 	python3 -m pip install -e .
 
 
