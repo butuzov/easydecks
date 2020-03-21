@@ -1,0 +1,84 @@
+@font-face {
+    font-family: xkcd-script;
+    src: data-uri('application/font-woff;base64', 'assets/xkcd-script.woff');
+}
+
+
+html {
+    font-size: 100%;
+    height:100%;
+    width:100%;
+
+    body {
+        padding:0;
+        height:100%;
+        width:100%;
+        margin:0;
+        background-color:#fdfdfd;
+        color:#41455c;
+        font-family: xkcd-script;
+        font-size:2rem;
+
+        div {
+            background-repeat: no-repeat,  no-repeat, no-repeat, no-repeat;
+            background-position: bottom right, bottom left, top right, top left;
+
+            height:100%;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &.question {
+                background-image: data-uri('image/jpeg;base64', 'assets/q-br.png'),
+                                  data-uri('image/jpeg;base64', 'assets/q-bl.png'),
+                                  data-uri('image/jpeg;base64', 'assets/q-tr.png'),
+                                  data-uri('image/jpeg;base64', 'assets/q-tl.png');
+
+            }
+
+            &.answer {
+                background-image: data-uri('image/jpeg;base64', 'assets/a-br.png'),
+                                  data-uri('image/jpeg;base64', 'assets/a-bl.png'),
+                                  data-uri('image/jpeg;base64', 'assets/a-tr.png'),
+                                  data-uri('image/jpeg;base64', 'assets/a-tl.png');
+
+            }
+        }
+
+
+
+        figure {
+            display: block;
+            width: 400px;
+            min-height:400px;
+            text-align: center;
+            img {
+                max-width:100%;
+                height:auto;
+            }
+
+            figcaption {
+                display: block;
+                line-height: 3rem;
+                font-size:3rem;
+
+
+                small {
+                    display: inline-block;
+                    background:#404040;
+                    color:#fefefe;
+                    font-size:40%;
+                    height:1rem;
+                    line-height: 1rem;
+                    padding:4px;
+                    border:1px solid #000;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+
