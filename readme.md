@@ -40,5 +40,26 @@ deck.card('DEFAULT').default(
 deck.save(__file__.replace(".py", ""))
 ```
 
-* [ ] TODO: Custom Card Class
+Verbs Card
+
+```python
+import easydecks as ed
+
+deck = ed.Deck("Duo.Deu.Basics_Verbs")
+deck.card(
+  "verbs",
+  "verstehen",
+  "to understand",
+  "Sie ... es nicht",
+  'Sie <strong><span class="base">versteh</span><span class="changed">en</span></strong> es nicht',
+  '<strong>verben</strong> - <strong>Sie verb<span class="changed">en</span></strong>',
+  '<strong>verstehen</strong> - <strong>Sie versteh<span class="changed">en</span></strong>')
+
+deck.save(__file__.replace(".py", ""))
+```
+
+```
+
+* [ ] Docs
+* [ ] Tests
 * [ ] TODO: Media (Pictures and Sound)
