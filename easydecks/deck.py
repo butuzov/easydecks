@@ -27,8 +27,8 @@ class Deck:
 
     def card(self, card, *args, **kwargs) -> Callable:
 
-        if card.upper() != self.default_card_type:
-            args = args[1:]
+        # if card.upper() == self.default_card_type:
+        #     args = args[1:]
 
         self._cards.append(self._types[card].__init__(*args, **kwargs))
         return self._cards[-1]
