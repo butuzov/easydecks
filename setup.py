@@ -1,7 +1,7 @@
 """
 easydecks
 ~~~~~~~~~
-Wrapper for the genanki with benefits.
+Wrapper for the genanki (with benefits).
 """
 
 from setuptools import setup, find_packages
@@ -9,18 +9,19 @@ from setuptools import setup, find_packages
 setup(
     name="easydecks",
     version=__import__("easydecks").__version__,
-    description="Wrapper for genanki with benefits",
+    description="Wrapper for the genanki (with benefits).",
     author="Oleg Butuzov",
     author_email="butuzov@made.ua",
     platforms=["OS Independent"],
     python_requires='>=3.6',
     packages=find_packages(exclude=['tests']),
     install_requires=["genanki"],
-    license="MIT",
+    license="Apache License 2.0",
     classifiers=[
-        "Development Status :: 1 - Planning",
         "Intended Audience :: Education",
+        "Development Status :: 2 - Pre-Alpha",
         "Topic :: Education",
+        "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
