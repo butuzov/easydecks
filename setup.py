@@ -5,11 +5,18 @@ Wrapper for the genanki (with benefits).
 """
 
 from setuptools import setup, find_packages
+from os import path
+
+directory = path.abspath(path.dirname(__file__))
+with open(path.join(directory, "readme.md"), encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name="easydecks",
     version=__import__("easydecks").__version__,
     description="Wrapper for the genanki (with benefits).",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Oleg Butuzov",
     author_email="butuzov@made.ua",
     platforms=["OS Independent"],
